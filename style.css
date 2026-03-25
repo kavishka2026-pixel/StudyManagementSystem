@@ -39,3 +39,63 @@ button {
     font-weight: bold;
     margin: 10px 0;
 }
+/* Mobile App Style Base */
+body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding-bottom: 70px; /* Bottom Navigation එකට ඉඩ තැබීමට */
+}
+
+.container {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Card Style (Mobile App එකක වගේ) */
+section {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px; /* කොන් රවුම් කිරීම */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Input Fields - ඇඟිල්ලෙන් ස්පර්ශ කිරීමට පහසු වන ලෙස විශාල කිරීම */
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 16px; /* Zoom වීම වැලැක්වීමට අවම 16px */
+}
+
+button {
+    background-color: #007AFF; /* iOS Blue color */
+    color: white;
+    font-weight: bold;
+    border: none;
+    transition: 0.3s;
+}
+
+/* Bottom Navigation Bar */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+}
+
+.nav-item {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    text-decoration: none;
+}

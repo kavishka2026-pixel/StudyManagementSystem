@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <title>Study Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>Study Master Dashboard</h1>
+    </nav>
+
+    <div class="container">
+        <section id="assignment-tracker">
+            <h2>Assignment Tracker</h2>
+            <input type="text" id="taskName" placeholder="Assignment නම">
+            <input type="date" id="dueDate">
+            <button onclick="addAssignment()">එකතු කරන්න</button>
+            <ul id="assignmentList"></ul>
+        </section>
+
+        <section id="pomodoro">
+            <h2>Focus Timer (25 min)</h2>
+            <div id="timerDisplay">25:00</div>
+            <button onclick="startTimer()">Start</button>
+            <button onclick="resetTimer()">Reset</button>
+        </section>
+
+        <section id="gpa-calc">
+            <h2>GPA Calculator</h2>
+            <input type="number" id="credits" placeholder="Credits (උදා: 3)">
+            <input type="number" id="gradePoint" placeholder="Grade Point (උදා: 4.0)">
+            <button onclick="calculateGPA()">Calculate</button>
+            <p>ඔබේ GPA: <span id="gpaResult">0.00</span></p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
